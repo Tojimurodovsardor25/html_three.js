@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #fff !important;
+}
+
+body {
+  background: #000;
+}
+
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-clouds {
+  font-size: 13px;
+}
+
+.cloud {
+  width: 249px;
+  height: 249px;
+  padding: 9px;
+  cursor: pointer;
+  position: relative;
+  margin: 33px;
+}
+
+.cloud .logo {
+  width: 100%;
+  height: 195px;
+}
+
+.cloud .logo img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(2px 0px 19px white);
+}
+
+.volume_input {
+  width: 100%;
+  height: 33px;
+  padding: 0 31px;
+  display: flex;
+  align-items: center;
+}
+
+.volume_input input {
+  width: 100%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border-radius: 6px;
+  height: 6px;
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(100%, #df7164),
+    color-stop(15%, #f5d0cc)
+  );
+
+  background-image: -moz-linear-gradient(
+    left center,
+    #df7164 0%,
+    #df7164 15%,
+    #f5d0cc 15%,
+    #f5d0cc 100%
+  );
+}
+
+input[type="range"]::-moz-range-track {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #df7164;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none !important;
+  background-color: #df7164;
+  border: none;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+
+.sound_png {
+  width: 100%;
+  height: 205px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 61px 79px;
+}
+
+.sound_png img {
+  width: 100%;
+  height: 100%;
+}
+
+.nature-length {
+  position: relative;
+}
+
+.nature-info {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
