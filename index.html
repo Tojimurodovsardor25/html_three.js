@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>I'm</title>
-  </head>
 
-  <body>
-    <!-- Canvas start images effects :) Sardor -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>I'm</title>
+</head>
 
-    <canvas id="canvas1"></canvas>
-    <div class="container">
-      <div class="nature-length">
-        <div class="nature-info">
-          <div class="cloud">
-            <div class="logo">
-              <img
-                src="./assets/images/—Pngtree—white clouds_5649445.png"
-                alt=""
-              />
+<body>
+  <!-- Canvas start images effects :) Sardor -->
+
+  <!-- <canvas id="canvas1"></canvas> -->
+  <audio src="" id="audio-source"></audio>
+  <div class="container">
+    <div class="nature-length">
+      <div class="nature-info">
+        <div class="cloud">
+          <div class="logo">
+            <img src="./assets/images/—Pngtree—white clouds_5649445.png" alt="" />
+          </div>
+          <div class="volume_input">
+            <div class="song">
+              <i class="fal fa-redo-alt"></i>
+              <span class="songs-name">Light rain</span>
             </div>
-            <div class="volume_input">
-              <input
-                type="range"
-                class="progress"
-                min="0"
-                max="100"
-                step="5"
-                value="63"
-              />
+            <div class="prop-info">
+              <input type="range" class="volume-progress" min="0" max="100" step="5" value="63" />
             </div>
-            <div class="sound_png">
-              <img
-                src="./assets/images/icon/—Pngtree—vector play icon_4013500.png"
-                alt=""
-              />
-            </div>
+          </div>
+          <div class="sound_png">
+            <img class="play-songs" src="./assets/images/icon/images/—Pngtree—start-and-play-icons.png" alt="">
           </div>
         </div>
       </div>
     </div>
-    <!-- Canvas pro app news -->
-    <script
-      defer
-      src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
-      integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <!-- Canvas pro app news -->
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
+    integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
+    crossorigin="anonymous"></script>
+  <!-- <script src="./script.js"></script> -->
+  <script src="./sound.js"></script>
+</body>
+
 </html>

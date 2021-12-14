@@ -5,11 +5,10 @@
   list-style: none;
   text-decoration: none;
   font-family: sans-serif;
-  color: #fff !important;
 }
 
 body {
-  background: #000;
+  background: #fff;
 }
 
 #canvas1 {
@@ -33,9 +32,8 @@ body {
 
 .cloud {
   width: 249px;
-  height: 249px;
+  height: 291px;
   padding: 9px;
-  cursor: pointer;
   position: relative;
   margin: 33px;
 }
@@ -48,15 +46,17 @@ body {
 .cloud .logo img {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(2px 0px 19px white);
+  filter: drop-shadow(2px 0px 19px rgb(0, 0, 0));
 }
 
 .volume_input {
   width: 100%;
-  height: 33px;
+  height: 57px;
   padding: 0 31px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .volume_input input {
@@ -122,11 +122,13 @@ input[type="range"]::-moz-range-thumb {
   left: 0;
   right: 0;
   padding: 61px 79px;
+  cursor: pointer;
 }
 
 .sound_png img {
   width: 100%;
   height: 100%;
+  transition: 0.3s;
 }
 
 .nature-length {
@@ -138,4 +140,38 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+
+.volume_input span {
+  font-size: 21px;
+  width: 100%;
+  letter-spacing: 1.3px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: #000 !important;
+}
+
+.volume_input .song {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 13px;
+}
+
+.volume_input .song .fa-redo-alt {
+  color: #000 !important;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.prop-info {
+  width: 100%;
+}
+
+/* ------------------ */
+.active {
+  display: block;
+  transition: 0.3s;
+}
+/* ------------------ */
