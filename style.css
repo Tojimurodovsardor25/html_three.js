@@ -26,8 +26,9 @@ body {
   height: 100%;
 }
 
-.fa-clouds {
-  font-size: 13px;
+.fa-redo-alt {
+  font-size: 21px;
+  cursor: pointer;
 }
 
 .cloud {
@@ -68,22 +69,20 @@ input[type="range"] {
   -moz-apperance: none;
   border-radius: 6px;
   height: 6px;
+  margin: 3px 9px 0 9px;
+  cursor: pointer;
 
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(100%, #df7164),
-    color-stop(15%, #f5d0cc)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      color-stop(100%, #df7164),
+      color-stop(15%, #f5d0cc));
 
-  background-image: -moz-linear-gradient(
-    left center,
-    #df7164 0%,
-    #df7164 15%,
-    #f5d0cc 15%,
-    #f5d0cc 100%
-  );
+  background-image: -moz-linear-gradient(left center,
+      #df7164 0%,
+      #df7164 15%,
+      #f5d0cc 15%,
+      #f5d0cc 100%);
 }
 
 input[type="range"]::-moz-range-track {
@@ -99,7 +98,7 @@ input[type="range"]:focus {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none !important;
-  background-color: #df7164;
+  background-color: #ec2d18;
   height: 13px;
   width: 13px;
   border-radius: 50%;
@@ -107,7 +106,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]::-moz-range-thumb {
   -moz-appearance: none !important;
-  background-color: #df7164;
+  background-color: #fd4f4f;
   border: none;
   height: 13px;
   width: 13px;
@@ -147,16 +146,21 @@ input[type="range"]::-moz-range-thumb {
   font-size: 21px;
   width: 100%;
   letter-spacing: 1.3px;
-  display: block;
   font-family: "Poppins", sans-serif;
   color: #000 !important;
+  max-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .volume_input .song {
   display: flex;
   align-items: center;
   width: 100%;
-  padding-left: 13px;
 }
 
 .volume_input .song .fa-redo-alt {
@@ -167,11 +171,20 @@ input[type="range"]::-moz-range-thumb {
 
 .prop-info {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ------------------ */
 .active {
   display: block;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
+
+.active-repeat-color {
+  color: red;
+  filter: drop-shadow(0px 0px 2px #fff);
+}
+
 /* ------------------ */
