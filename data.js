@@ -9,4 +9,9 @@ let songs = [
         name: 'song 2',
         path: 'assets/music/swamp-at-night-ambience-crickets-frogs-nature.mp3'
     },
+    {
+        _id: '3',
+        name: 'song 3',
+        path: 'assets/music/swamp-at-night-ambience-crickets-frogs-nature.mp3'
+    },
 ]

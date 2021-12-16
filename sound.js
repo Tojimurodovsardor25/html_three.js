@@ -21,10 +21,10 @@ playBtn.addEventListener('click', () => {
         `
         console.log('Qo`shiq to`xtadi');
     } else {
-        Music.play()
         playBtn.innerHTML = `
         <img class="play-songs active" src="./assets/images/icon/images/—Pngtree—start-and-pause-icons_5468929_05.png" alt="">
         `
+        Music.play()
         icon.classList.add('active')
         console.log('Qo`shiq qo`yildi');
         Music.addEventListener('ended', () => {

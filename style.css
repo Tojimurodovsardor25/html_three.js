@@ -178,7 +178,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* ------------------ */
 .active {
-  display: block;
+  display: block !important;
   transition: 0.3s !important;
 }
 
