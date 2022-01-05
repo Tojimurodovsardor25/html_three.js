@@ -12,6 +12,6 @@ let songs = [
     {
         _id: '3',
         name: 'song 3',
-        path: 'assets/music/swamp-at-night-ambience-crickets-frogs-nature.mp3'
+        path: 'assets/music/rain-in-nature-ambience_NWM.mp3'
     },
 ]

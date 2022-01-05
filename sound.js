@@ -4,13 +4,19 @@ let currentSoung = 0
 const Music = document.querySelector('#audio-source')
 const volumeProgress = document.querySelector('.volume-progress')
 const songName = document.querySelector('.songs-name')
-const playBtn = document.querySelector('.sound_png')
+const playBtn = document.querySelectorAll('.sound_png')
 const icon = document.querySelector('.sound_png img')
 const songSeekBar = document.querySelector('.song-seek-bar')
 const songRepeat = document.querySelector('.repeat')
 
 /* play click event function */
-playBtn.addEventListener('click', () => {
+playBtn.forEach(element => {
+    element.addEventListener('click', function () {
+        Playlist()
+    })
+});
+
+function Playlist() {
     const testActive = icon.classList.contains('active')
     console.log(testActive);
     if (testActive) {
@@ -35,24 +41,25 @@ playBtn.addEventListener('click', () => {
             Music.play()
         })
     }
-})
+}
 
 const setSong = (i) => {
     // songSeekBar.value = 0;
+    console.log(i);
     let song = songs[i];
-    console.log(song);
+    songName.innerHTML = song.name
     currentSoung = i;
 
     Music.src = song.path
 
-    songName.innerHTML = song.name
 
     // setTimeout(() => {
     //     songSeekBar.max = Music.duration
     // }, 300)
 }
-
-setSong(0)
+for (var i = 0; i <= setSong.length; i++) {
+    console.log(setSong);
+}
 
 // format duration
 
